@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>AI Tools Hub</h1>
+            <p>Discover and master the best AI tools available</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Browse by Category Section -->
+        <section class="category-section">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <p class="section-subtitle">Explore AI tools by their primary function</p>
+                
+                <div class="category-grid">
+                    <!-- Category Card 1 -->
+                    <a href="text-writing.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/text-icon.png" alt="Text & Writing">
+                        </div>
+                        <h3>Text & Writing</h3>
+                        <p>AI writing assistants, grammar checkers, and content generators</p>
+                    </a>
+                    
+                    <!-- Category Card 2 -->
+                    <a href="image-generation.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/image-icon.png" alt="Image Generation">
+                        </div>
+                        <h3>Image Generation</h3>
+                        <p>AI tools that create and enhance visual content</p>
+                    </a>
+                    
+                    <!-- Category Card 3 -->
+                    <a href="video-audio.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/video-icon.png" alt="Video & Audio">
+                        </div>
+                        <h3>Video & Audio</h3>
+                        <p>AI-powered video editors, voice generators, and audio tools</p>
+                    </a>
+                    
+                    <!-- Category Card 4 -->
+                    <a href="design-tools.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/design-icon.png" alt="Design Tools">
+                        </div>
+                        <h3>Design Tools</h3>
+                        <p>AI-assisted design and branding solutions</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Us Help You Section -->
+        <section class="help-section">
+            <div class="container">
+                <h2>Help Us Help You</h2>
+                <p class="section-subtitle">Explore these resources to enhance your AI journey</p>
+                
+                <div class="tools-grid">
+                    <!-- Tool Card 1 -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="images/generic-tool-logo.png" alt="Tool Logo">
+                        </div>
+                        <h3>Prompt Generator</h3>
+                        <p class="tool-description">Create optimized AI prompts for better results with our smart generator.</p>
+                        <div class="pricing-badge free">Free</div>
+                        <div class="category-tags">
+                            <span class="tag">Prompt Generation</span>
+                            <span class="tag">Tips</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                    
+                    <!-- Tool Card 2 -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="images/generic-tool-logo.png" alt="Tool Logo">
+                        </div>
+                        <h3>AI News Digest</h3>
+                        <p class="tool-description">Weekly curated AI news specific to your region and interests.</p>
+                        <div class="pricing-badge premium">Premium</div>
+                        <div class="category-tags">
+                            <span class="tag">Local AI News</span>
+                            <span class="tag">Updates</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                    
+                    <!-- Tool Card 3 -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="images/generic-tool-logo.png" alt="Tool Logo">
+                        </div>
+                        <h3>Expert Connect</h3>
+                        <p class="tool-description">Get matched with AI experts for personalized consultation.</p>
+                        <div class="pricing-badge paid">Paid</div>
+                        <div class="category-tags">
+                            <span class="tag">Connect with Expert</span>
+                            <span class="tag">Consultation</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                    
+                    <!-- Tool Card 4 -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="images/generic-tool-logo.png" alt="Tool Logo">
+                        </div>
+                        <h3>AI Tutorials</h3>
+                        <p class="tool-description">Step-by-step guides for popular AI tools and applications.</p>
+                        <div class="pricing-badge free">Free</div>
+                        <div class="category-tags">
+                            <span class="tag">Tutorials</span>
+                            <span class="tag">Learning</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Email Modal -->
+    <div class="email-modal" id="emailModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Contact About <span id="toolName"></span></h3>
+            <form id="emailForm">
+                <div class="form-group">
+                    <label for="userEmail">Your Email</label>
+                    <input type="email" id="userEmail" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
