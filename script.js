@@ -1,37 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all email buttons
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL without page jump
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+    
+    // Email modal functionality
     const emailButtons = document.querySelectorAll('.email-btn');
     const emailModal = document.getElementById('emailModal');
     const closeModal = document.querySelector('.close-modal');
     const emailForm = document.getElementById('emailForm');
     const toolNameElement = document.getElementById('toolName');
     
-    // Track which tool was clicked
     let currentTool = '';
     
-    // Add click event to all email buttons
     emailButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            // Prevent default if this is a link
-            if (e.target.tagName === 'A') {
-                e.preventDefault();
-            }
+            e.preventDefault();
             
-            // Get the tool name from the card
             currentTool = this.closest('.tool-card').querySelector('h3').textContent;
             toolNameElement.textContent = currentTool;
             emailModal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            document.body.style.overflow = 'hidden';
         });
     });
     
-    // Close modal when X is clicked
     closeModal.addEventListener('click', function() {
         emailModal.style.display = 'none';
         document.body.style.overflow = 'auto';
     });
     
-    // Close modal when clicking outside
     window.addEventListener('click', function(event) {
         if (event.target === emailModal) {
             emailModal.style.display = 'none';
@@ -39,30 +52,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Handle form submission
     emailForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
         const userEmail = document.getElementById('userEmail').value;
         const message = document.getElementById('message').value;
         
-        // Log to console
         console.log('=== EMAIL REQUEST ===');
         console.log(`Tool: ${currentTool}`);
         console.log(`User Email: ${userEmail}`);
         console.log(`Message: ${message}`);
         console.log('=====================');
         
-        // Show confirmation
+        // In a real application, you would send this data to your server
+        // For now, we'll just show a confirmation
         alert(`Thank you for your interest in ${currentTool}! We've received your message and will contact you soon.`);
         
-        // Reset form and close modal
         emailForm.reset();
         emailModal.style.display = 'none';
         document.body.style.overflow = 'auto';
     });
     
-    // Close modal with Escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && emailModal.style.display === 'block') {
             emailModal.style.display = 'none';
