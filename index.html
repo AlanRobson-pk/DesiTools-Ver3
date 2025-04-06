@@ -21,8 +21,69 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h2>Your Gateway to AI Tools</h2>
-                <p>Explore curated collections of the most powerful AI tools across all categories</p>
+                <div class="hero-content">
+                    <h2>Supercharge Your Workflow with AI</h2>
+                    <p>Explore the most powerful artificial intelligence tools curated by experts</p>
+                    <a href="#featured-tools" class="cta-button">Explore Tools</a>
+                </div>
+                <div class="hero-video">
+                    <iframe src="https://www.youtube.com/embed/MJUbUDa-y7E" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured AI Tools Section -->
+        <section id="featured-tools" class="featured-section">
+            <div class="container">
+                <h2>Featured AI Tools</h2>
+                <p class="section-subtitle">Hand-picked selection of the most impactful AI tools</p>
+                
+                <div class="tools-grid">
+                    <!-- ChatGPT -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+                        </div>
+                        <h3>ChatGPT</h3>
+                        <p class="tool-description">Advanced AI chatbot that can assist with writing, coding, and more.</p>
+                        <div class="pricing-badge free">Free</div>
+                        <div class="category-tags">
+                            <span class="tag">Text Generation</span>
+                            <span class="tag">Productivity</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                    
+                    <!-- Grammarly -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Grammarly_logo.svg" alt="Grammarly">
+                        </div>
+                        <h3>Grammarly</h3>
+                        <p class="tool-description">AI-powered writing assistant that checks grammar and style.</p>
+                        <div class="pricing-badge premium">Premium</div>
+                        <div class="category-tags">
+                            <span class="tag">Writing</span>
+                            <span class="tag">Editing</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                    
+                    <!-- MidJourney -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Midjourney_Emblem.png" alt="MidJourney">
+                        </div>
+                        <h3>MidJourney</h3>
+                        <p class="tool-description">Create stunning AI-generated artwork from text prompts.</p>
+                        <div class="pricing-badge paid">Paid</div>
+                        <div class="category-tags">
+                            <span class="tag">Art</span>
+                            <span class="tag">Design</span>
+                        </div>
+                        <button class="email-btn">Email</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -33,8 +94,8 @@
                 <p class="section-subtitle">Explore AI tools by their primary function</p>
                 
                 <div class="category-grid">
-                    <!-- Category Cards -->
-                    <a href="#text-writing" class="category-card">
+                    <!-- Text & Writing -->
+                    <a href="text-writing.html" target="_blank" class="category-card">
                         <div class="category-icon">
                             <i class="fas fa-keyboard"></i>
                         </div>
@@ -42,7 +103,8 @@
                         <p>AI writing assistants, grammar checkers, and content generators</p>
                     </a>
                     
-                    <a href="#image-generation" class="category-card">
+                    <!-- Image Generation -->
+                    <a href="image-generation.html" target="_blank" class="category-card">
                         <div class="category-icon">
                             <i class="fas fa-image"></i>
                         </div>
@@ -50,7 +112,8 @@
                         <p>AI tools that create and enhance visual content</p>
                     </a>
                     
-                    <a href="#video-audio" class="category-card">
+                    <!-- Video & Audio -->
+                    <a href="video-audio.html" target="_blank" class="category-card">
                         <div class="category-icon">
                             <i class="fas fa-video"></i>
                         </div>
@@ -58,7 +121,8 @@
                         <p>AI-powered video editors, voice generators, and audio tools</p>
                     </a>
                     
-                    <a href="#design-tools" class="category-card">
+                    <!-- Design Tools -->
+                    <a href="design-tools.html" target="_blank" class="category-card">
                         <div class="category-icon">
                             <i class="fas fa-paint-brush"></i>
                         </div>
@@ -69,304 +133,38 @@
             </div>
         </section>
 
-        <!-- Category Tools Sections -->
-        <!-- Text & Writing -->
-        <section id="text-writing" class="tools-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Text & Writing Tools</h2>
-                    <a href="#" class="back-to-top">Back to Top ↑</a>
-                </div>
-                <p class="section-subtitle">AI-powered writing assistants and content generators</p>
-                
-                <div class="tools-grid">
-                    <!-- Grammarly -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <h3>Grammarly</h3>
-                        <p class="tool-description">AI-powered writing assistant that checks grammar, spelling, and style.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Grammar Check</span>
-                            <span class="tag">Writing Assistant</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Jasper AI -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Jasper AI</h3>
-                        <p class="tool-description">AI content creator for blogs, ads, and marketing copy.</p>
-                        <div class="pricing-badge paid">Paid</div>
-                        <div class="category-tags">
-                            <span class="tag">Content Creation</span>
-                            <span class="tag">Marketing</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- ChatGPT -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-comment-alt"></i>
-                        </div>
-                        <h3>ChatGPT</h3>
-                        <p class="tool-description">Advanced AI chatbot that can assist with writing and editing.</p>
-                        <div class="pricing-badge free">Free</div>
-                        <div class="category-tags">
-                            <span class="tag">Chatbot</span>
-                            <span class="tag">Writing</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Image Generation -->
-        <section id="image-generation" class="tools-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Image Generation Tools</h2>
-                    <a href="#" class="back-to-top">Back to Top ↑</a>
-                </div>
-                <p class="section-subtitle">AI tools that create and enhance visual content</p>
-                
-                <div class="tools-grid">
-                    <!-- MidJourney -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-magic"></i>
-                        </div>
-                        <h3>MidJourney</h3>
-                        <p class="tool-description">Create stunning images from text prompts with this AI art generator.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Art Generation</span>
-                            <span class="tag">Design</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Ideogram -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-font"></i>
-                        </div>
-                        <h3>Ideogram 3.0</h3>
-                        <p class="tool-description">Generate beautiful typography and logo designs with AI.</p>
-                        <div class="pricing-badge paid">Paid</div>
-                        <div class="category-tags">
-                            <span class="tag">Typography</span>
-                            <span class="tag">Logo Design</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Looka -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3>Looka</h3>
-                        <p class="tool-description">AI-powered logo maker and brand identity designer.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Logo Design</span>
-                            <span class="tag">Branding</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video & Audio -->
-        <section id="video-audio" class="tools-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Video & Audio Tools</h2>
-                    <a href="#" class="back-to-top">Back to Top ↑</a>
-                </div>
-                <p class="section-subtitle">AI-powered video editors, voice generators, and audio tools</p>
-                
-                <div class="tools-grid">
-                    <!-- Speechma -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-microphone-alt"></i>
-                        </div>
-                        <h3>Speechma</h3>
-                        <p class="tool-description">Convert text to natural-sounding speech with AI voices.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Text-to-Speech</span>
-                            <span class="tag">Voice Generation</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- InVideo -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <h3>InVideo</h3>
-                        <p class="tool-description">Create professional videos in minutes with AI assistance.</p>
-                        <div class="pricing-badge paid">Paid</div>
-                        <div class="category-tags">
-                            <span class="tag">Video Editing</span>
-                            <span class="tag">Content Creation</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Steve AI -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <h3>Steve AI</h3>
-                        <p class="tool-description">Turn text into engaging videos automatically.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Video Creation</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Design Tools -->
-        <section id="design-tools" class="tools-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Design Tools</h2>
-                    <a href="#" class="back-to-top">Back to Top ↑</a>
-                </div>
-                <p class="section-subtitle">AI-assisted design and branding solutions</p>
-                
-                <div class="tools-grid">
-                    <!-- Canva -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Canva</h3>
-                        <p class="tool-description">Design anything with AI-powered templates and tools.</p>
-                        <div class="pricing-badge free">Free</div>
-                        <div class="category-tags">
-                            <span class="tag">Graphic Design</span>
-                            <span class="tag">Templates</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Adobe Firefly -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                        <h3>Adobe Firefly</h3>
-                        <p class="tool-description">Generative AI for creatives from Adobe.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Image Generation</span>
-                            <span class="tag">Creative Suite</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Uizard -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Uizard</h3>
-                        <p class="tool-description">AI-powered UI design tool for websites and apps.</p>
-                        <div class="pricing-badge free">Free</div>
-                        <div class="category-tags">
-                            <span class="tag">UI/UX Design</span>
-                            <span class="tag">Prototyping</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Help Us Help You Section -->
         <section class="help-section">
             <div class="container">
                 <h2>Help Us Help You</h2>
-                <p class="section-subtitle">Explore these resources to enhance your AI journey</p>
+                <p class="section-subtitle">Resources to enhance your AI journey</p>
                 
-                <div class="tools-grid">
-                    <!-- Tool Card 1 -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-lightbulb"></i>
+                <div class="help-grid">
+                    <!-- Resource 1 -->
+                    <div class="help-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/7O3iAIXA63E" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <h3>Prompt Generator</h3>
-                        <p class="tool-description">Create optimized AI prompts for better results with our smart generator.</p>
-                        <div class="pricing-badge free">Free</div>
-                        <div class="category-tags">
-                            <span class="tag">Prompt Generation</span>
-                            <span class="tag">Tips</span>
-                        </div>
-                        <button class="email-btn">Email</button>
+                        <h3>Getting Started with AI</h3>
+                        <p>Learn the basics of using AI tools effectively in your workflow</p>
                     </div>
                     
-                    <!-- Tool Card 2 -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-newspaper"></i>
+                    <!-- Resource 2 -->
+                    <div class="help-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/7qR4wyx4iFk" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <h3>AI News Digest</h3>
-                        <p class="tool-description">Weekly curated AI news specific to your region and interests.</p>
-                        <div class="pricing-badge premium">Premium</div>
-                        <div class="category-tags">
-                            <span class="tag">Local AI News</span>
-                            <span class="tag">Updates</span>
-                        </div>
-                        <button class="email-btn">Email</button>
+                        <h3>Prompt Engineering</h3>
+                        <p>Master the art of crafting effective prompts for AI tools</p>
                     </div>
                     
-                    <!-- Tool Card 3 -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-user-tie"></i>
+                    <!-- Resource 3 -->
+                    <div class="help-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/BCZ4Qq9tocA" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <h3>Expert Connect</h3>
-                        <p class="tool-description">Get matched with AI experts for personalized consultation.</p>
-                        <div class="pricing-badge paid">Paid</div>
-                        <div class="category-tags">
-                            <span class="tag">Connect with Expert</span>
-                            <span class="tag">Consultation</span>
-                        </div>
-                        <button class="email-btn">Email</button>
-                    </div>
-                    
-                    <!-- Tool Card 4 -->
-                    <div class="tool-card">
-                        <div class="tool-logo">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>AI Tutorials</h3>
-                        <p class="tool-description">Step-by-step guides for popular AI tools and applications.</p>
-                        <div class="pricing-badge free">Free</div>
-                        <div class="category-tags">
-                            <span class="tag">Tutorials</span>
-                            <span class="tag">Learning</span>
-                        </div>
-                        <button class="email-btn">Email</button>
+                        <h3>AI Ethics Guide</h3>
+                        <p>Understand the responsible use of AI in your projects</p>
                     </div>
                 </div>
             </div>

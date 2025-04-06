@@ -1,25 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-                
-                // Update URL without page jump
-                history.pushState(null, null, targetId);
-            }
-        });
-    });
-    
     // Email modal functionality
     const emailButtons = document.querySelectorAll('.email-btn');
     const emailModal = document.getElementById('emailModal');
@@ -64,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(`Message: ${message}`);
         console.log('=====================');
         
-        // In a real application, you would send this data to your server
-        // For now, we'll just show a confirmation
         alert(`Thank you for your interest in ${currentTool}! We've received your message and will contact you soon.`);
         
         emailForm.reset();
@@ -78,5 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
             emailModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.getAttribute('href') === '#') return;
+            
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
